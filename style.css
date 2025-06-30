@@ -1,0 +1,225 @@
+body {
+    font-family: 'inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+h1,h2,h3,h4,h5 {
+    font-weight: 700;
+    color: #222;
+}
+
+.animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 {transition-delay: 0.1s;}
+.delay-2 {transition-delay: 0.2s;}
+.delay-3 {transition-delay: 0.3s;}
+.delay-4 {transition-delay: 0.4s;}
+.delay-5 {transition-delay: 0.5s;}
+
+.navbar-brand {
+    font-family: 'inter', sans sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Section General */
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+section h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+section p {
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+/* Skills Icons */
+section#skills .fa-2x {
+  margin-bottom: 10px;
+}
+
+/* Cards (Project Section) */
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Section */
+#contact p a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+#contact p a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+.skill-box {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  background-color: #e9ecef;
+}
+
+.skill-box i {
+  color: #0d6efd;
+}
+
+.skill-box h6 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* === Contact Section === */
+#contact {
+  background-color: #f8f9fa;
+}
+
+#contact h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+#contact .lead {
+  color: #555;
+}
+
+.contact-info {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.contact-info a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 25px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: inherit;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  opacity: 0.75;
+}
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 20px;
+  }
+}
+
+/* === Projects Section === */
+#projects {
+  font-family: 'Inter', sans-serif;
+}
+
+.project-card {
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.project-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #0d6efd;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Gallery image styling */
+.gallery-img {
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Optional: smooth fade */
+.carousel-fade .carousel-item {
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* Center & constrain width */
+#project-gallery .carousel {
+  margin: 0 auto;
+  max-width: 700px;
+}
